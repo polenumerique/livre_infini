@@ -3,13 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Histoire Aléatoire</title>
-    <link rel="icon" href="favicon.ico" type="image/icon">
+    <title>Générateur d'Histoire Aléatoire</title>
+    <link rel="icon" href="favicon.ico" type="image/icon32">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4a90e2;
+        }
+        button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #357ab7;
+        }
+        #story {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin-top: 20px;
+            white-space: pre-wrap;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Générateur d'Histoire Aléatoire</h1>
+    <img src="icon.jpg" alt="Illustration">
     <button onclick="generateStory()">Générer une Histoire</button>
-    <div id="story" style="white-space: pre-wrap;"></div>
+    <div id="story"></div>
 
     <script>
         async function fetchFileContent(file) {
