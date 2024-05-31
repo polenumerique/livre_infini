@@ -8,7 +8,7 @@
 <body>
     <h1>Générateur d'Histoire Aléatoire</h1>
     <button onclick="generateStory()">Générer une Histoire</button>
-    <div id="story"></div>
+    <div id="story" style="white-space: pre-wrap;"></div>
 
     <script>
         async function fetchFileContent(file) {
@@ -19,11 +19,16 @@
 
         function getRandomSentence(sentences) {
             const randomIndex = Math.floor(Math.random() * sentences.length);
-            return sentences[randomIndex];
+            return sentences[randomIndex].trim();
         }
 
         async function generateStory() {
-            const files = ['file1.txt', 'file2.txt', 'file3.txt', 'file4.txt', 'file5.txt', 'file6.txt', 'file7.txt', 'file8.txt', 'file9.txt', 'file10.txt', 'file11.txt', 'file12.txt', 'file13.txt'];
+            const files = [
+                'file1.txt', 'file2.txt', 'file3.txt', 'file4.txt', 'file5.txt',
+                'file6.txt', 'file7.txt', 'file8.txt', 'file9.txt', 'file10.txt',
+                'file11.txt', 'file12.txt', 'file13.txt', 'file14.txt', 'file15.txt',
+                'file16.txt', 'file17.txt', 'file18.txt'
+            ];
             let story = '';
 
             for (const file of files) {
