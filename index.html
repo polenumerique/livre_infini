@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Une Nouvelle Histoire A Chaque Clic</title>
     <link rel="icon" href="favicon.ico" type="images/icon32.jpg">
-    <style>
+   <!--
+   <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
@@ -50,6 +51,61 @@
             margin-bottom: 20px;
         }
     </style>
+    -->
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        padding: 20px;
+        margin: 0;
+    }
+    h1 {
+        color: #4a90e2;
+        text-align: center;
+    }
+    button {
+        background-color: #4a90e2;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin: 20px auto;
+        display: block;
+    }
+    button:hover {
+        background-color: #357ab7;
+    }
+    #story {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(100, 10, 10, 1);
+        max-width: 100%;
+        margin: 20px auto;
+        white-space: pre-wrap;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin: 20px auto;
+        display: block;
+    }
+
+    @media screen and (min-width: 600px) {
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    }
+    </style>
+
 </head>
 <body>
     <h1>Histoires Aléatoire</h1>
